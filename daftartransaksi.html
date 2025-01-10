@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Transaksi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link-container a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .link-container a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo PERPUSNAS.png" alt="Logo PerpusNas" style="width: 100px; height: 70px;" />
+        <h1>Daftar Transaksi E-Library </h1>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Daftar Transaksi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Buku</th>
+                    <th>Nama Manusia</th>
+                    <th>Jumlah Pinjam</th>
+                    <th>Tanggal Pinjam</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Belajar HTML</td>
+                    <td>Zqya</td>
+                    <td>1</td>
+                    <td>10 Januari 2025</td>
+                    <td>Pinjam Buku</td>
+                </tr>
+                <tr>
+                    <td>CSS Mastery</td>
+                    <td>Kara</td>
+                    <td>1</td>
+                    <td>9 Januari 2025</td>
+                    <td>Pinjam Buku</td>
+                </tr>
+                <tr>
+                    <td>Belajar Mencintai</td>
+                    <td>Vicidior</td>
+                    <td>1</td>
+                    <td>8 Januari 2025</td>
+                    <td>Pinjam Buku</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="link-container">
+            <a href="transaksi.html">Kembali ke Halaman Transaksi</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Arc E-Library 2025 | 241011700623</p>
+    </footer>
+</body>
+</html>

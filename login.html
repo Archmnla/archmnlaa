@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(background\ login.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: whitesmoke;
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #003d82;
+        }
+
+        .login-container .links {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-container .links a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            color: #444;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        
+        <img src="Logo PERPUSNAS.png" alt="Logo PerpusNas" />
+        <h1>Silahkan Log-in</h1>
+        <form onsubmit="return login(event)">
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button type="submit">Masuk</button>
+        </form>
+        <div class="links">
+            <a href="#">Lupa Password?</a> | <a href="#">Daftar</a>
+        </div>
+        <p>&copy; Arc E-Library 2025 | 241011700623</p>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+
+                window.location.href = "beranda.html";
+            } else {
+                alert('Silakan isi username dan password!');
+            }
+        }
+    </script>
+</body>
+</html>
